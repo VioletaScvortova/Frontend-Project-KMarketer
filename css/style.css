@@ -534,10 +534,11 @@ img {
     margin: 0 auto;
 }
 
+
+/* Header styles start*/
 .header {
-    background-color: black;
     position: fixed;
-    top: 0;
+    top: 23px;
     left: 0;
     width: 100%;
 }
@@ -560,6 +561,7 @@ img {
     flex-wrap: wrap;
     gap: 21px;
 }
+
 
 
 .header_list {
@@ -590,3 +592,15 @@ img {
 .header_link:hover, .header_link:focus, .header_link:active {
     opacity: 0.75;
 }
+
+/* Header styles end*/
+/* Intro styles start*/
+
+.introduction {
+    height: 100vh;
+    background: url(../img/intro_background.png) no-repeat center;
+    background-repeat: cover;
+}
+
+
+/* Intro styles end*/
