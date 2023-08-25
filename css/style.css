@@ -571,11 +571,6 @@ img {
     margin: 20px;
 }
 
-
-.header_icon:last-child {
-    margin-right: 0px;
-}
-
 .header_link {
     text-align: center;
     line-height: 24px; 
@@ -595,27 +590,15 @@ img {
 /* Header styles end*/
 /* Intro styles start*/
 
-
-.general-container {
-    display: flex;
-    width: 1050px;
-    padding: 80px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    text-align: center;
-}
-
 .main-container {
     display: flex;
-    width: 860px;
+    width: 1050px;
     padding: 40px 0px;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    text-align: center
+    margin: auto;
     }
-
 
 
 .introduction {
@@ -628,49 +611,68 @@ img {
 }
 
 
-h1{
-    max-width: 75%;
-    text-align: center;
-    font-size: 4em;
+h1 {
+    color: white;
+    font-size: 58px;
     font-weight: 800;
     line-height: 80px;
     letter-spacing: 0.2px;
-    color: #ffffff;
-    margin: 0px;
-}
-
-h4{
-    max-width: 71%;
     text-align: center;
-    font-size: 1.3em;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0.2px;
-    color: #fff;
+    font-style: normal;
     margin: 0px;
-}
+}  
+ 
+
+h4 {
+color: white;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; 
+letter-spacing: 0.2px;
+text-align: center;  
+}  
 
 
 /* Intro styles end*/
+.buttons{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
 .button-get-quote {
     display: flex;
     padding: 10px 36px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
-    Copy
     border-radius: 37px;
     background: var(--primary-color, #FFA62B);
-    
+    color: white; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 200% */
+    letter-spacing: 0.2px;
+
 }
 
 .button-learn-more {
     display: flex;
     padding: 10px 36px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
-    Copy
     border-radius: 37px;
-    border: 1px solid var(--light-background-color, #FFF);     
+    border: 1px solid var(--light-background-color, #FFF);;
+    color: white;  
+    background-color: transparent; 
+    gap: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    letter-spacing: 0.2px;
 }
