@@ -518,10 +518,10 @@ html {
 body {
     font-family: 'Montserrat';
     font-style: normal;
-    font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
     color: #FFFFFF;
+    text-align: center;
 }
 
 img {
@@ -563,7 +563,6 @@ img {
 }
 
 
-
 .header_list {
     display: flex;
     flex-wrap: wrap;
@@ -596,11 +595,82 @@ img {
 /* Header styles end*/
 /* Intro styles start*/
 
+
+.general-container {
+    display: flex;
+    width: 1050px;
+    padding: 80px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    width: 860px;
+    padding: 40px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center
+    }
+
+
+
 .introduction {
     height: 100vh;
     background: url(../img/intro_background.png) no-repeat center;
     background-repeat: cover;
+    padding-top: 224px;
+    padding-bottom: 85px;
+
+}
+
+
+h1{
+    max-width: 75%;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+h4{
+    max-width: 71%;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    margin: 0px;
 }
 
 
 /* Intro styles end*/
+.button-get-quote {
+    display: flex;
+    padding: 10px 36px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    Copy
+    border-radius: 37px;
+    background: var(--primary-color, #FFA62B);
+    
+}
+
+.button-learn-more {
+    display: flex;
+    padding: 10px 36px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    Copy
+    border-radius: 37px;
+    border: 1px solid var(--light-background-color, #FFF);     
+}
