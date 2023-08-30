@@ -164,12 +164,6 @@ body {
     background-position-x: center;
 }
 
-.header {
-    position: fixed;
-    top: 23px;
-    left: 0;
-    width: 100%;
-}
 
 .top-banner__header {
     display: flex;
@@ -179,21 +173,23 @@ body {
 }
 
 
-.item__icon {
-    width: 16px;
-    height: 16px;
+.header__home {
+    display: flex;
+    align-items: center;
 }
 
 
 .header__nav {
     margin-left: auto;
     font-weight: 600;
+    align-items: center;
 }
 
 
 .header__nav .nav__list {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 
@@ -208,6 +204,11 @@ body {
     background: transparent;
     border: none;
     display: flex;
+}
+
+.item__icon {
+    width: 16px;
+    height: 16px;
 }
 
 .nav__link {
@@ -240,7 +241,7 @@ body {
 }
 
 .container {
-    width: 1020px;
+    max-width: 1020px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
@@ -249,7 +250,9 @@ body {
 }
 
 
-h1,h2,h4 {
+h1,
+h2,
+h4 {
     color: white;
     letter-spacing: 0.2px;
     text-align: center;
@@ -308,85 +311,67 @@ h1,h2,h4 {
 
 @media screen and (min-width:320px) and (max-width:768px) {
 
-
     body {
         background-position: center;
-      }
-
-    .top-banner__header { 
-    display: inline;
-    flex-direction: column;
-    align-items: center;
     }
 
 
-    .header__home { 
-    size-adjust: 100px;
+    .top-banner__header {
+        flex-direction: column;
+        margin-top: 20px;
     }
 
     .header__nav {
-    float: none;
-    width: 100%;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-}
-    
-    .nav__list {
-        float: none;
-        width: 100%;
-        margin-top: 1.2em;
-        align-content: center;
-        }
-
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 
     .header__actions {
-        float: none;
-        width: 100%;
-        margin-top: 1.2em;
-        margin-left: 0;
-}
+        margin: 0 auto;
+    }
 
-.content__slogan {
-    font-size: 40px;
-    line-height: 1.5em;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
-.content__mission {
-    font-size: 0.8em;
-    line-height: 1.5em;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    .nav__link {
+        font-size: 12px;
+    }
 
 
-.button--primary {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    .top-banner__content {
+        gap: 20px;
+        ;
+    }
 
-.button--secondary {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    .content__slogan {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .content__mission {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .button {
+        line-height: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
 }
 
 /* Home-2. Strong Points */
 
 
-.strong-points{
+.strong-points {
     font-family: 'Montserrat';
     background-image: #252B42;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 0 120px;
     background-position-x: center;
-    }
+}
 
-.strong-points___content{
+.strong-points___content {
     width: 1020px;
     margin: 0 auto;
     padding: 0 15px;
@@ -395,19 +380,16 @@ h1,h2,h4 {
     flex-direction: column;
 }
 
-.content__reasons
-{   font-size: 40px;
+.content__reasons {
+    font-size: 40px;
     font-weight: 700;
     line-height: 55px;
-    
+
 }
 
 p {
     font-size: 14px;
     font-weight: 500;
-    line-height: 20px; 
+    line-height: 20px;
     letter-spacing: 0.2px;
 }
-
-
-
