@@ -130,9 +130,10 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 
 
-/* Header styles start*/
+    /* Header styles start*/
 
 }
+
 html {
     box-sizing: border-box;
 }
@@ -226,8 +227,8 @@ body {
     opacity: 0.75;
 }
 
-/* Header styles end*/
-/* Intro styles start*/
+/* Home-1. Header styles end*/
+/* Home-1. Intro styles start*/
 
 .top-banner__content {
     display: flex;
@@ -240,7 +241,6 @@ body {
 
 .container {
     width: 1020px;
-    min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
@@ -249,9 +249,7 @@ body {
 }
 
 
-
-h1,
-h4 {
+h1,h2,h4 {
     color: white;
     letter-spacing: 0.2px;
     text-align: center;
@@ -263,24 +261,21 @@ h4 {
     font-size: 58px;
     font-weight: 800;
     line-height: 80px;
-
 }
 
 .content__mission {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-
 }
 
 
-/* Intro styles end*/
+/* Home-1. Intro styles end*/
 
 .top-banner__buttons {
     display: flex;
     gap: 10px;
     justify-content: center;
-
 }
 
 .button {
@@ -309,3 +304,110 @@ h4 {
     border: 1px solid var(--light-background-color, #FFF);
     background-color: transparent;
 }
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+
+    body {
+        background-position: center;
+      }
+
+    .top-banner__header { 
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+    .header__home { 
+    size-adjust: 100px;
+    }
+
+    .header__nav {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+    
+    .nav__list {
+        float: none;
+        width: 100%;
+        margin-top: 1.2em;
+        align-content: center;
+        }
+
+
+    .header__actions {
+        float: none;
+        width: 100%;
+        margin-top: 1.2em;
+        margin-left: 0;
+}
+
+.content__slogan {
+    font-size: 40px;
+    line-height: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.content__mission {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.button--primary {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button--secondary {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+}
+
+/* Home-2. Strong Points */
+
+
+.strong-points{
+    font-family: 'Montserrat';
+    background-image: #252B42;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0 120px;
+    background-position-x: center;
+    }
+
+.strong-points___content{
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__reasons
+{   font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 0.2px;
+}
+
+
+
