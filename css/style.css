@@ -459,19 +459,22 @@ h6 {
   margin: 80px 0 10px 0;
 }
 
-.stars {
-  height: 20px;
-  width: 90px;
-  background-image: url("/img/svg/star.svg");
-  background-repeat: repeat-x;
-  padding: 0;
+.stars-rating {
+    display: flex;
+}
+
+.star {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
 }
 
 .empty-stars {
-  height: 20px;
-  width: 115px;
-  background-image: url("/img/svg/empty-star.svg");
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
 }
+
 
 .client__name {
   font-weight: 600;
@@ -538,6 +541,11 @@ h6 {
   text-align: justify;
 }
 
+#ceo {
+    text-transform: uppercase;
+}
+
+
 .staff__job {
   color: #737373;
   font-weight: 600;
@@ -546,5 +554,6 @@ h6 {
   text-align: justify;
   margin: 5px 0 5px 0;
 }
+
 
 /* Home-5. Meet our team end*/
