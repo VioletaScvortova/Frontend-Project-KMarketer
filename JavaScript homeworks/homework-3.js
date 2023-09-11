@@ -26,7 +26,7 @@ switch (countryCode) {
     break;
   default:
     console.log("Sorry, " + countryCode + " is out of the country codes list.");
-}
+} // Output: Argentina
 
 //Switch task 2//
 
@@ -73,5 +73,44 @@ switch (true) {
     console.log("Grade F");
     break;
   default:
-    console.log(examScore + " is undefined. To find out exam grading scale, please enter another exam score.");
-}
+    console.log(
+      examScore +
+        " is undefined. To find out exam grading scale, please enter another exam score."
+    );
+} // Output: Grade B+
+
+//Ternary Operator task 1//
+
+{
+  let number = 17;
+  let checkNumber =
+    number % 2 == 0 ? "The number is even" : "The number is odd";
+
+  console.log(checkNumber);
+} // Output: The number is odd
+
+//Ternary Operator task 2//
+
+{
+  let isLoggedIn = true;
+  let message = isLoggedIn ? "Sign in" : "Create an account";
+  console.log(message);
+} // Output: Sign in
+
+//Ternary Operator task 3//
+{let bookPrice = 190;
+let bookQuantity = 5;
+let bookStock = true;
+let entireBookOrder = bookStock ? "Total order cost: " + bookPrice * bookQuantity + " MDL": "This book is temporarily out of stock. Order now and we`ll deviver when available";
+  console.log(entireBookOrder);} // Output: Total order cost: 950 MDL
+
+//Ternary Operator task 4//
+
+{
+let currentYear = new Date().getFullYear();
+
+let leapYear = currentYear % 4 == 0 && (currentYear % 100 !== 0 || currentYear % 400 == 0)? currentYear + " is a leap year" : currentYear + " is a non-leap year";
+  
+console.log(leapYear);
+
+  } // Output: 
