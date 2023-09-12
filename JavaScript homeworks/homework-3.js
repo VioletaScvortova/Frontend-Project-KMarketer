@@ -33,43 +33,43 @@ switch (countryCode) {
 const examScore = "87";
 
 switch (true) {
-    case examScore >= 97 && examScore <= 100:
+    case examScore >= 97:
         console.log("Grade A+");
         break;
-    case examScore >= 93 && examScore <= 96:
+    case examScore >= 93:
         console.log("Grade A");
         break;
-    case examScore >= 90 && examScore <= 92:
+    case examScore >= 90:
         console.log("Grade A-");
         break;
-    case examScore >= 87 && examScore <= 89:
+    case examScore >= 87:
         console.log("Grade B+");
         break;
-    case examScore >= 83 && examScore <= 86:
+    case examScore >= 83:
         console.log("Grade B");
         break;
-    case examScore >= 80 && examScore <= 82:
+    case examScore >= 80:
         console.log("Grade B-");
         break;
-    case examScore >= 77 && examScore <= 79:
+    case examScore >= 77:
         console.log("Grade C+");
         break;
-    case examScore >= 73 && examScore <= 76:
+    case examScore >= 73:
         console.log("Grade C");
         break;
-    case examScore >= 70 && examScore <= 72:
+    case examScore >= 70:
         console.log("Grade C-");
         break;
-    case examScore >= 67 && examScore <= 69:
+    case examScore >= 67:
         console.log("Grade D+");
         break;
-    case examScore >= 63 && examScore <= 66:
+    case examScore >= 63:
         console.log("Grade D");
         break;
-    case examScore >= 60 && examScore <= 62:
+    case examScore >= 60:
         console.log("Grade D-");
         break;
-    case examScore >= 0 && examScore <= 59:
+    case examScore >= 0:
         console.log("Grade F");
         break;
     default:
@@ -131,7 +131,7 @@ function tellFortune(X, Y, Z, N) {
     let continent = Y;
     let post = X;
 
-    let yourFuture = "You will be a " + X + " in " + Y + ", and will get married to " + Z + " with " + N + " kids"
+    let yourFuture = `You will be a ${X} in ${Y} and will get married to ${Z} with ${N} kids`
 
     console.log(yourFuture);
 }
@@ -142,9 +142,9 @@ tellFortune("sculptor", "Europe", "Santiago", "3"); // Output: You will be a scu
 
 //Function task 2//
 
-function calculateDogAge(X) {
-    let dogAge = X * 7;
-    let dogAgeMessage = "Your dog is " + dogAge + " years old in dog years!";
+function calculateDogAge(humanAge) {
+    let dogAge = humanAge * 7;
+    let dogAgeMessage = `Your dog is ${dogAge} years old in dog years!`;
 
     console.log(dogAgeMessage);
 }
@@ -152,3 +152,20 @@ function calculateDogAge(X) {
 calculateDogAge("5"); // Output: Your dog is 35 years old in dog years!
 calculateDogAge("7"); // Output: Your dog is 49 years old in dog years!
 calculateDogAge("3"); // Output: Your dog is 21 years old in dog years!
+
+//Bonus task Arrow Function//
+
+let CalculationSupply = (currentAge, foodPerDay, maxYears = 100) => {
+    let reamainingYears = maxYears - currentAge;
+    let foodAmount = reamainingYears * foodPerDay * 365;
+
+    return `You will need ${foodAmount} kg of food to live to ${maxYears} years.`
+};
+
+let result1 = CalculationSupply(25, 1.5, 75);
+let result2 = CalculationSupply(45, 2);
+let result3 = CalculationSupply(30, 1.3, 80);
+
+console.log(result1);
+console.log(result2);
+console.log(result3);
