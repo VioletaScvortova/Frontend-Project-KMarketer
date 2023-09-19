@@ -85,15 +85,19 @@ for (let subject in marks) {
 let averageMark = sumMarks / score;
 console.log(averageMark); // 8
 
+
 //Iteration task 9. Objects//
+let myDog = new Object();
+myDog.name = 'Luna';
+myDog.age = 5;
+myDog.color = 'brown';
+myDog.puppiesNames = [];
 
-let myDog = {
-name: 'Luna',
-age: 5,
-color: 'brown',
-puppies: ['Cooper', 'Lucy', 'Daisy', 'Rocky'],
-};
+function myDogPuppies(myDog, numberOfPuppies) {
+    for (let i = 1; i <= numberOfPuppies; i++) {
+        myDog.puppiesNames.push(`Puppy_${i}`);
+    }
+}
 
-let numberOfPuppies = myDog.puppies.length;
-console.log (numberOfPuppies); //4
-
+myDogPuppies(myDog, 5);
+console.log(myDog); // {name: 'Luna', age: 5, color: 'brown', puppiesNames: Array(5)}
