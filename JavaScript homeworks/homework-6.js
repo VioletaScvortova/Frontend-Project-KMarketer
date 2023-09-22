@@ -1,5 +1,4 @@
 //Loops task 1//
-
 let PersonDescription = ['name: John', 'age: 30', 'city: New-York'];
 
 let i = 0;
@@ -44,8 +43,30 @@ if (keyInObject(person, keyToFind)) {
 // true 
 
 
-//Loops task 3 - I had the issues with the "do...while loop"//
+//Loops task 3//
+function combineTheWords(obj) {
+    let keys = Object.keys(obj);
 
+    let combineValue = '';
+    let i = 0;
+
+    do {
+        let currentProp = keys[i];
+        combineValue += obj[currentProp];
+        i++;
+
+    } while (i < keys.length);
+
+    return combineValue
+}
+
+let obj = {
+    prop1: 'Hello',
+    prop2: 'World',
+    prop3: '!'
+}
+
+console.log(combineTheWords(obj));
 
 
 //Loops task 4//
@@ -70,6 +91,7 @@ console.log(result); // 8
 
 
 //Loops task 5//
+//v1
 function calculateAverageScore(students) {
     let average = {};
 
@@ -98,9 +120,57 @@ let students = [{
 let StudentAverageScore = calculateAverageScore(students);
 console.log(StudentAverageScore); // {John: 'medium: 8.00', Mary: 'medium: 9.33', Alex: 'medium: 7.00'}
 
+//v2
+let calculatedMediumScore = (initialObj) => {
+    let mediumResult = Object.assign({}, studentsResults);
 
-//Loops task 6 - I had the issues with the "do...while loop"//
+    for (let marks in initialObj) {
+        let currentMarks = initialObj[marks];
 
+        let i = 0;
+        let sum = 0;
+        let medium = 0;
+        let arrayLength = currentMarks.length;
+
+        while (i < arrayLength) {
+            sum += currentMarks[i];
+            i++;
+        }
+        medium = sum / arrayLength;
+
+       mediumResult[marks] = `medium: ${medium.toFixed(2)}`;
+    }
+    return mediumResult;
+};
+
+let studentsResults = {
+    John: [8, 7, 9],
+    Mary: [9, 9, 10],
+    Alex: [6, 8, 7],
+};
+
+console.log(calculatedMediumScore(studentsResults)); 
+
+
+//Loops task 6 //
+let reversedString = (greetingString) => {
+    let greetingStringArray = greetingString.split('');
+
+    let resultStringArray = [];
+    let i = greetingStringArray.length - 1;
+    do {
+        resultStringArray.push(greetingStringArray[i]);
+        i--;
+    } while (i >= 0);
+
+    let resultString = resultStringArray.join('');
+
+    return resultString;
+};
+
+let greetingString = 'Hello,world!'
+
+console.log(reversedString(greetingString)); // !dlrow,olleH
 
 
 //Loops task 7 //
@@ -120,4 +190,4 @@ function isPalindrome(string) {
 
 let string = 'level';
 
-console.log(isPalindrome(string));
+console.log(isPalindrome(string)); //true
