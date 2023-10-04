@@ -1,14 +1,21 @@
 //Loops task 1//
-let PersonDescription = ['name: John', 'age: 30', 'city: New-York'];
+let object = {
+    name: 'John',
+    age: 30,
+    city: 'New-York'
+};
 
-let i = 0;
-let text = '';
-while (PersonDescription[i]) {
-    text += PersonDescription[i] + '\n';
-    i++;
-}
+let method = (object) => {
+    let keys = Object.keys(object);
+    let i = 0;
+    while (i < keys.length) {
+        let key = keys[i];
+        console.log(`${key}: ${object[key]}`);
+        i++;
+    }
+};
 
-console.log(text);
+method(object);
 
 /*
 name: John
@@ -18,9 +25,9 @@ city: New-York
 
 
 //Loops task 2//
-function keyInObject(obj, keyToFind) {
-    for (let key in obj) {
-        if (key == keyToFind) {
+function keyInObject(person, keyToFind) {
+    for (let key in person) {
+        if (key === keyToFind) {
             return true;
         }
     }
@@ -34,11 +41,8 @@ let person = {
 };
 
 let keyToFind = 'age';
-if (keyInObject(person, keyToFind)) {
-    console.log('true');
-} else {
-    console.log('false');
-}
+
+console.log(keyInObject(person, keyToFind));
 
 // true 
 
@@ -71,9 +75,10 @@ console.log(combineTheWords(obj));
 
 //Loops task 4//
 function countNumberOfVowels(string) {
-    let vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
     let count = 0;
     let i = 0;
+    string = string.toLowerCase();
 
     while (i < string.length) {
         let char = string[i];
@@ -87,11 +92,42 @@ function countNumberOfVowels(string) {
 
 let stringContent = 'Hello world, my name is Albert';
 let result = countNumberOfVowels(stringContent);
-console.log(result); // 8
+console.log(result); // 8 
 
 
 //Loops task 5//
 //v1
+let calculatedMediumScore = (initialObj) => {
+    let mediumResult = Object.assign({}, studentsResults);
+
+    for (let marks in initialObj) {
+        let currentMarks = initialObj[marks];
+
+        let i = 0;
+        let sum = 0;
+        let medium = 0;
+        let arrayLength = currentMarks.length;
+
+        while (i < arrayLength) {
+            sum += currentMarks[i];
+            i++;
+        }
+        medium = sum / arrayLength;
+
+        mediumResult[marks] = `medium: ${medium.toFixed(2)}`;
+    }
+    return mediumResult;
+};
+
+let studentsResults = {
+    John: [8, 7, 9],
+    Mary: [9, 9, 10],
+    Alex: [6, 8, 7],
+};
+
+console.log(calculatedMediumScore(studentsResults));
+
+//v2 - with reduce method
 function calculateAverageScore(students) {
     let average = {};
 
@@ -119,37 +155,6 @@ let students = [{
 
 let StudentAverageScore = calculateAverageScore(students);
 console.log(StudentAverageScore); // {John: 'medium: 8.00', Mary: 'medium: 9.33', Alex: 'medium: 7.00'}
-
-//v2
-let calculatedMediumScore = (initialObj) => {
-    let mediumResult = Object.assign({}, studentsResults);
-
-    for (let marks in initialObj) {
-        let currentMarks = initialObj[marks];
-
-        let i = 0;
-        let sum = 0;
-        let medium = 0;
-        let arrayLength = currentMarks.length;
-
-        while (i < arrayLength) {
-            sum += currentMarks[i];
-            i++;
-        }
-        medium = sum / arrayLength;
-
-       mediumResult[marks] = `medium: ${medium.toFixed(2)}`;
-    }
-    return mediumResult;
-};
-
-let studentsResults = {
-    John: [8, 7, 9],
-    Mary: [9, 9, 10],
-    Alex: [6, 8, 7],
-};
-
-console.log(calculatedMediumScore(studentsResults)); 
 
 
 //Loops task 6 //
