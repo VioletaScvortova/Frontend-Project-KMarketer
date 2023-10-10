@@ -8,7 +8,7 @@
     <title>KMarketer: We Take Care of the Future</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <script src="JavaScript homeworks/homework-7.js"></script>
+    <script src="kmarketer.js"></script>
 </head>
 
 <body>
@@ -115,6 +115,32 @@
                         Development</h5>
                     <p class="card__text">the quick fox jumps over the lazy dog the quick fox jumps over the lazy dog
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-presentation" id="gradient-background">
+        <div class="container">
+
+            <div class="video-presentation__content">
+                <h2 class="content__general-title">We are providing best business service</h2>
+                <p class="content__text">Problems trying to resolve the conflict between the two major realms of
+                    Classical physics: Newtonian mechanics
+                </p>
+            </div>
+
+            <div class="video-presentation__preview">
+
+                <div class="video-play">
+                    <div class="video__cover">
+                        <img src="./img/video-presentation-cover.png" alt="video presentation cover">
+                        <video id='KMarketer-video' width="875px" height="440px" controls="controls" preload="true"
+                            loop="loop" muted="muted" volume="0">
+                            <source src="//i.imgur.com/7RvC9TA.mp4">
+                        </video>
+                    </div>
+                    <img src="./img/svg/play-icon.svg" alt="play button" class="video__play-button">
                 </div>
             </div>
         </div>
@@ -259,34 +285,58 @@
             </div>
     </section>
 
-<section class="video-presentation" id="gradient-background">
-    <div class="container">
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-us__content">
 
-        <div class="video-presentation__content">
-            <h2 class="content__general-title">We are providing best business service</h2>
-            <p class="content__text">Problems trying to resolve the conflict between the two major realms of Classical
-                physics: Newtonian mechanics
-            </p>
-        </div>
-
-        <div class="video-presentation__preview">
-
-            <div class="video-play">
-                <div class="video__cover">
-                    <img src="./img/video-presentation-cover.png" alt="video presentation cover">
-                    <video id='KMarketer-video' width="875px" height="440px" controls="controls" preload="true" loop="loop" muted="muted" volume="0"> 
-                        <source src="//i.imgur.com/7RvC9TA.mp4"> 
-                     </video>
+                <div class="contact-us__heading">
+                    <h5 class="contact-us__upper-header">Contact Us</h5>
+                    <h2 class="contact-us__header">Make an Appointment</h2>
                 </div>
-                <img src="./img/svg/play-icon.svg" alt="play button" class="video__play-button">
-            </div
 
+                <form id="contact-form" class="contact-us__form">
+                    <div class="contact-us__grid-container">
+                        <div class="contact-us__grid-content">
+                            <input type="text" id="inputFullName" class="form-content" name="fullname" 
+                                placeholder="Full Name">
+                            <p id="resultFullName" class="form-result"></p>
+                        </div>
+
+                        <div class="contact-us__grid-content">
+                            <input type="email" id="inputEmail" class="form-content" name="email"
+                                placeholder="example@gmail.com"
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+                            <p id="resultEmail" class="form-result"></p>
+                        </div>
+
+                        <div class="contact-us__grid-content">
+                            <label for="inputSelectDate"></label>
+                            <input type="date" id="inputSelectDate" class="form-content" name="date">
+                            <p id="resultSelectDate" class="form-result"></p>
+                        </div>
+
+                        <div class="contact-us__grid-content">
+                            <select id="inputSelectTime" class="form-select" name="time">
+                                <option value="select">Please Select Time</option>
+                                <option value="time">10:00 AM Available</option>
+                                <option value="time">12:00 PM Available</option>
+                                <option value="time">02:00 PM Available</option>
+                                <option value="time">04:00 PM Available</option>
+                            </select>
+                            <p id="resultSelectTime" class="form-result"></p>
+                        </div>
+                    </div>
+                  
+                    <div class="contact-us__grid-content">
+                        <textarea id="inputMessage" class="form-message" name="message"
+                            placeholder="Message"></textarea>
+                        <p id="resultMessage" class="form-result"></p>
+                    </div>
+                    
+                    <input class="form-button" type="submit" value="Book Appointment">
+               
+                </form>
+            </div>
         </div>
-
-    </div>
-</section>
-
-
+    </section>
 </body>
-
-</html>
