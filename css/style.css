@@ -659,17 +659,31 @@ h6 {
   width: 100%;
 }
 
-.contact-us__grid-content.success .form-result {
-  color: #FFA62B;
+:root {
+  --success-color: #FFA62B;
+  --error-color: #7e0606;
 }
 
-.contact-us__grid-content.error .form-result {
-  color: #121831;
+.contact-us__grid-content.success .form-result {
+  color: var(--success-color);
+}
+
+.contact-us__grid-content.error .form-result{
+  color: var(--error-color);
+}
+
+.contact-us__grid-content.success .form-content{
+  border: 0.12rem solid var(--success-color);
+}
+
+.contact-us__grid-content.error .form-content{
+  border: 0.12rem solid var(--error-color);
 }
 
 .form-content,
 .form-select,
-.form-message {
+.form-message,
+.form-url {
   display: flex;
   width: 100%;
   font-weight: 600;
@@ -692,6 +706,7 @@ h6 {
 .form-message {
   resize: none;
   height: 140px;
+  margin-top: 20px;
 }
 
 .form-result {
