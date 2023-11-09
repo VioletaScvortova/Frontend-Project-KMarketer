@@ -132,6 +132,13 @@
   /* Top-banner styles start*/
 }
 
+
+#user_block {
+  padding: 50px;
+  background-color: #FFA62B;
+  }
+
+
 html {
   box-sizing: border-box;
 }
@@ -141,6 +148,15 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+:root 
+--orange: ;
+--darkblue: ;
+--lightblue: ;
+--grey: ;
+
+
+
 
 body {
   font-family: "Montserrat";
@@ -396,6 +412,8 @@ h6 {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.2px;
+  color: #fff;
+  text-align: center;
 }
 
 .grid-container {
