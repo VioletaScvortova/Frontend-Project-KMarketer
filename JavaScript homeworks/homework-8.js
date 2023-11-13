@@ -22,7 +22,10 @@ console.log(first); // Output: red
 console.log(third); // Output: blue
 
 
-// Task 3 Array destructuring
+// Task 3 Spread operator
+const func = (...params) => params;
+console.log(func(1, 10, 100, 1000, 10000)); // Output: [1, 10, 100, 1000, 10000]
+
 
 
 
