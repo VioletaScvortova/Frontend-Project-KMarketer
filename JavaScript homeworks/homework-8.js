@@ -32,7 +32,7 @@ const func = (...params) => params;
 console.log(func(1, 10, 100, 1000, 10000)); // Output: [1, 10, 100, 1000, 10000]
 
 
-// Task 3 Spread operator
+// Task 4 Spread operator
 //V1 simple operation
 const countryName = ['Spain', 'Portugal', 'Norway', 'France'];
 const countryCode = [34, 351, 47, 33];
@@ -52,3 +52,20 @@ const countryInfo = combineArrays(country, countryPhoneCode);
 
 console.log(countryInfo); // Output: ['Spain', 'Portugal', 'Norway', 'France', 34, 351, 47, 33]
 
+
+// Task 5 Rest operator
+const addNewProp = (student, language) => ({
+    ...student,
+    language
+});
+
+const studentProp = {
+    firstName: 'John',
+    lastName: 'Doe',
+    faculty: 'history',
+    year: 3
+};
+
+const newStudent = addNewProp(studentProp, 'en');
+
+console.log(newStudent); //Output: {firstName: 'John', lastName: 'Doe', faculty: 'history', year: 3, language: 'en'}
