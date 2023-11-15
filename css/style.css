@@ -136,7 +136,7 @@
 #user_block {
   padding: 50px;
   background-color: #FFA62B;
-  }
+}
 
 
 html {
@@ -149,14 +149,12 @@ html {
   box-sizing: inherit;
 }
 
-:root 
---orange: ;
---darkblue: ;
---lightblue: ;
---grey: ;
-
-
-
+:root {
+  --orange: /* значение переменной */;
+  --darkblue: /* значение переменной */;
+  --lightblue: /* значение переменной */;
+  --grey: /* значение переменной */;
+}
 
 body {
   font-family: "Montserrat";
@@ -562,8 +560,6 @@ h6 {
       rgb(11, 75, 92));
 }
 
-;
-
 .staff__job {
   color: #737373;
   font-weight: 600;
@@ -668,15 +664,15 @@ h6 {
   color: var(--success-color);
 }
 
-.contact-us__grid-content.error .form-result{
+.contact-us__grid-content.error .form-result {
   color: var(--error-color);
 }
 
-.contact-us__grid-content.success .form-content{
+.contact-us__grid-content.success .form-content {
   border: 0.12rem solid var(--success-color);
 }
 
-.contact-us__grid-content.error .form-content{
+.contact-us__grid-content.error .form-content {
   border: 0.12rem solid var(--error-color);
 }
 

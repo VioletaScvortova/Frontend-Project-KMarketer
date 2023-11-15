@@ -69,3 +69,5 @@ const studentProp = {
 const newStudent = addNewProp(studentProp, 'en');
 
 console.log(newStudent); //Output: {firstName: 'John', lastName: 'Doe', faculty: 'history', year: 3, language: 'en'}
+
+// Task 6 

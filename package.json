@@ -1,0 +1,26 @@
+{
+  "name": "kmarketer",
+  "version": "1.0.0",
+  "description": "KMarketer - is the agency that provides marketing and business services worldwide",
+  "main": "kmarketer.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mygit"
+  },
+  "keywords": [
+    "kmarketer",
+    "marketing",
+    "npm"
+  ],
+  "author": "violeta scvortova",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
+
+
