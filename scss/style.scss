@@ -132,10 +132,14 @@
   /* Top-banner styles start*/
 }
 
-#user_block {
-  padding: 50px;
-  background-color: #ffa62b;
-}
+
+$font-family: "Montserrat", sans-serif;
+$primary-color: #ffa62b;
+$secondary-color: #252b42;
+$tertiary-color: #fff;
+$quaternary-color:
+$quinary-color:
+
 
 html {
   box-sizing: border-box;
@@ -147,33 +151,22 @@ html {
   box-sizing: inherit;
 }
 
-:root {
-  --orange:
-    /* значение переменной */
-  ;
-  --darkblue:
-    /* значение переменной */
-  ;
-  --lightblue:
-    /* значение переменной */
-  ;
-  --grey:
-    /* значение переменной */
-  ;
-}
-
 body {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-size: 14px;
+  font-family: {
+    family: $font-family;
+    font-style: normal;
+    size: 14px;
+    weight: normal;
+  }
   line-height: 1.2;
-  font-weight: normal;
-  color: white;
+  color: $tertiary-color;
   text-align: center;
 }
 
+
+
 .top-banner {
-  font-family: "Montserrat";
+  font-family: $font-family;
   background-image: url("/img/intro_background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,7 +202,7 @@ body {
         font-style: normal;
         line-height: 24px;
         letter-spacing: 0.2px;
-        color: white;
+        color: $tertiary-color;
         text-decoration: none;
       }
 
@@ -284,7 +277,7 @@ h2,
 h4,
 h5,
 h6 {
-  color: white;
+  color: $tertiary-color;
   letter-spacing: 0.2px;
   text-align: center;
   font-style: normal;
@@ -292,8 +285,8 @@ h6 {
 
 #card-items {
   border-radius: 5px;
-  border: 1px solid #dedede;
-  background: var(--light-background, #fff);
+  border: 1px solid $tertiary-color;
+  background: $tertiary-color;
   gap: 20px;
   padding: 30px 35px;
 }
@@ -319,16 +312,16 @@ h6 {
   font-style: normal;
   line-height: 28px;
   letter-spacing: 0.2px;
-  color: white;
+  color: $tertiary-color;
   font-weight: 700;
 }
 
 .button--primary {
-  background: var(--primary-color, #ffa62b);
+  background: $primary-color;
 }
 
 .button--secondary {
-  border: 1px solid var(--light-background-color, #fff);
+  border: 1px solid $tertiary-color;
   background-color: transparent;
 }
 
@@ -380,16 +373,16 @@ h6 {
 /* Home-2. Strong Points start*/
 
 .our-team {
-  font-family: "Montserrat";
-  background-color: #252b42;
+  font-family: $font-family;
+  background-color: $secondary-color;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
 }
 
 .strong-points {
-  font-family: "Montserrat";
-  background-color: #252b42;
+  font-family: $font-family;
+  background-color: $secondary-color;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -404,8 +397,8 @@ h6 {
 }
 
 .customer-feedback {
-  font-family: "Montserrat";
-  background-color: #252b42;
+  font-family: $font-family;
+  background-color: $secondary-color;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -420,8 +413,8 @@ h6 {
 }
 
 .video-presentation {
-  font-family: "Montserrat";
-  background-color: #252b42;
+  font-family: $font-family;
+  background-color: $secondary-color;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -448,7 +441,7 @@ h6 {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.2px;
-  color: #fff;
+  color: $tertiary-color;;
   text-align: center;
 }
 
@@ -461,17 +454,17 @@ h6 {
 }
 
 .grid-card {
-  background-color: white;
+  background-color: $tertiary-color;
   display: flex;
   width: 328px;
   padding: 35px 40px;
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid $tertiary-color;
 
   .card__title {
-    color: #252b42;
+    color: $secondary-color;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -530,7 +523,7 @@ h6 {
   letter-spacing: 0.2px;
   display: flex;
   text-decoration: none;
-  color: #ffa62b;
+  color: $primary-color
 }
 
 .client__job {
@@ -539,7 +532,7 @@ h6 {
   letter-spacing: 0.2px;
   display: flex;
   text-decoration: none;
-  color: #252b42;
+  color: $secondary-color;
 }
 
 .client-info {
@@ -549,11 +542,11 @@ h6 {
 }
 
 .client__photo {
-  width: 50px;
+  width: 80px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 50px;
-  border: 1px solid var(--muted-color, #bdbdbd);
+  border: 1px solid var(--muted-color, #b5b539);
   background: lightgray 50% / cover no-repeat;
 }
 
@@ -581,7 +574,7 @@ h6 {
 }
 
 .staff__name {
-  color: #252b42;
+  color: $secondary-color;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -639,7 +632,7 @@ h6 {
 /* Home-6. Contact Form start */
 
 .contact-us {
-  font-family: "Montserrat";
+  font-family: $font-family;
   background-image: url("/img/contact-form-cover.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -723,8 +716,8 @@ h6 {
   border-radius: 5px;
   border: 1px solid var(--muted-color, #bdbdbd);
   background: #f9f9f9;
-  color: var(--text-color, #252b42);
-  font-family: "Montserrat";
+  color: $secondary-color;
+  font-family: $font-family;
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.2px;
@@ -759,13 +752,13 @@ h6 {
   margin-top: 40px;
   margin-bottom: 90px;
   border-radius: 5px;
-  font-family: "Montserrat";
+  font-family: $font-family;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.2px;
-  color: white;
+  color: $tertiary-color;
   font-weight: 700;
-  background: var(--primary-color, #ffa62b);
+  background: $primary-color;
   border: none;
   cursor: pointer;
 }
