@@ -133,12 +133,13 @@
 }
 
 
-$font-family: "Montserrat", sans-serif;
+$font-family: "Montserrat",
+sans-serif;
 $primary-color: #ffa62b;
 $secondary-color: #252b42;
 $tertiary-color: #fff;
-$quaternary-color:
-$quinary-color:
+$success-color: #ffa62b;
+$error-color: #7e0606;
 
 
 html {
@@ -158,12 +159,11 @@ body {
     size: 14px;
     weight: normal;
   }
+
   line-height: 1.2;
   color: $tertiary-color;
   text-align: center;
 }
-
-
 
 .top-banner {
   font-family: $font-family;
@@ -300,20 +300,26 @@ h6 {
 
 /* Home-1. Intro styles end*/
 
-.button {
+@mixin button-style {
   display: flex;
-  padding: 10px 35px;
+  gap: 10px;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 37px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+  font-family: $font-family;
   font-size: 14px;
   font-style: normal;
-  line-height: 28px;
-  letter-spacing: 0.2px;
   color: $tertiary-color;
-  font-weight: 700;
+  cursor: pointer;
+}
+
+.button {
+  @include button-style;
+  padding: 10px 35px;
+  border-radius: 37px;
 }
 
 .button--primary {
@@ -372,57 +378,47 @@ h6 {
 
 /* Home-2. Strong Points start*/
 
-.our-team {
+@mixin section-styles {
   font-family: $font-family;
+  display: flex;
   background-color: $secondary-color;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
 }
 
+.our-team {
+  @include section-styles;
+}
+
 .strong-points {
-  font-family: $font-family;
-  background-color: $secondary-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0;
+  @include section-styles;
 
   &__content {
     max-width: 1050px;
     margin: 0 auto;
-    display: flex;
     align-items: center;
     flex-direction: column;
   }
 }
 
 .customer-feedback {
-  font-family: $font-family;
-  background-color: $secondary-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0;
+  @include section-styles;
 
   .feedback__content {
     max-width: 1050px;
     margin: 0 auto;
-    display: flex;
     align-items: center;
     flex-direction: column;
   }
 }
 
 .video-presentation {
-  font-family: $font-family;
-  background-color: $secondary-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0;
+  @include section-styles;
 
   &__content {
     max-width: 1050px;
     margin: 0 auto;
-    display: flex;
     align-items: center;
     flex-direction: column;
   }
@@ -441,7 +437,8 @@ h6 {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.2px;
-  color: $tertiary-color;;
+  color: $tertiary-color;
+  ;
   text-align: center;
 }
 
@@ -505,33 +502,29 @@ h6 {
   display: flex;
 }
 
-.star {
+.star,
+.empty-star {
   width: 22px;
   height: 22px;
   flex-shrink: 0;
 }
 
-.empty-stars {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-}
-
-.client__name {
+@mixin client-styles {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.2px;
   display: flex;
   text-decoration: none;
+}
+
+
+.client__name {
+  @include client-styles;
   color: $primary-color
 }
 
 .client__job {
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  display: flex;
-  text-decoration: none;
+  @include client-styles;
   color: $secondary-color;
 }
 
@@ -542,11 +535,11 @@ h6 {
 }
 
 .client__photo {
-  width: 80px;
+  width: 50px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 50px;
-  border: 1px solid var(--muted-color, #b5b539);
+  border: 1px solid $tertiary-color;
   background: lightgray 50% / cover no-repeat;
 }
 
@@ -682,39 +675,29 @@ h6 {
     width: 100%;
 
     .grid-content.success .form-result {
-      color: var(--success-color);
+      color: $success-color;
     }
 
     .grid-content.error .form-result {
-      color: var(--error-color);
+      color: $error-color;
     }
 
     .grid-content.success .form-content {
-      border: 0.12rem solid var(--success-color);
+      border: 0.12rem solid $success-color;
     }
 
     .grid-content.error .form-content {
-      border: 0.12rem solid var(--error-color);
+      border: 0.12rem solid $error-color;
     }
   }
-
-  :root {
-    --success-color: #ffa62b;
-    --error-color: #7e0606;
-  }
-
 }
 
-.form-content,
-.form-select,
-.form-message,
-.form-url {
-  display: flex;
+@mixin form-styles {
   width: 100%;
   font-weight: 600;
   padding: 15px 20px;
   border-radius: 5px;
-  border: 1px solid var(--muted-color, #bdbdbd);
+  border: 1px solid #bdbdbd;
   background: #f9f9f9;
   color: $secondary-color;
   font-family: $font-family;
@@ -725,13 +708,17 @@ h6 {
 
 .form-content,
 .form-select {
+  @include form-styles;
   height: 50px;
+  display: flex;
 }
 
 .form-message {
+  @include form-styles;
   resize: none;
   height: 140px;
   margin-top: 20px;
+  display: flex;
 }
 
 .form-result {
@@ -744,23 +731,13 @@ h6 {
 }
 
 .form-button {
-  display: flex;
+  @include button-style;
   padding: 15px 40px;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
   margin-top: 40px;
   margin-bottom: 90px;
   border-radius: 5px;
-  font-family: $font-family;
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-  color: $tertiary-color;
-  font-weight: 700;
   background: $primary-color;
   border: none;
-  cursor: pointer;
 }
 
 /* Home-6. Contact Form end */
