@@ -20,6 +20,13 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.3",
-    "parcel": "^2.10.3"
+    "parcel": "^2.10.3",
+    "prettier": "^3.1.0"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
+  "dependencies": {
+    "swiper": "^11.0.5"
   }
 }
