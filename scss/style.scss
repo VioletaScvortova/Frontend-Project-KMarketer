@@ -179,20 +179,19 @@ body {
     margin-bottom: 160px;
     width: 100%;
 
-    .header__home {
+    %header__home {
       display: flex;
       align-items: center;
     }
 
     .header__nav {
+      @extend %header__home;
       margin-left: auto;
       font-weight: 600;
-      align-items: center;
 
       .nav__list {
-        display: flex;
+        @extend %header__home;
         gap: 20px;
-        align-items: center;
       }
 
       .nav__link {
@@ -214,9 +213,8 @@ body {
     }
 
     .header__actions {
+      @extend %header__home;
       margin-left: 40px;
-      display: flex;
-      align-items: center;
       gap: 15px;
 
       .actions__item {
@@ -488,7 +486,6 @@ h6 {
 }
 
 /* Home-2. Strong Points end*/
-
 /* Home-4. What Clients Say start*/
 
 .content__general-title {
@@ -621,7 +618,6 @@ h6 {
 }
 
 /* Home-3. Video presectation end*/
-
 /* Home-6. Contact Form start */
 
 .contact-us {
@@ -693,6 +689,7 @@ h6 {
 }
 
 @mixin form-styles {
+  display: flex;
   width: 100%;
   font-weight: 600;
   padding: 15px 20px;
@@ -710,7 +707,6 @@ h6 {
 .form-select {
   @include form-styles;
   height: 50px;
-  display: flex;
 }
 
 .form-message {
@@ -718,7 +714,6 @@ h6 {
   resize: none;
   height: 140px;
   margin-top: 20px;
-  display: flex;
 }
 
 .form-result {
