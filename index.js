@@ -1,11 +1,8 @@
-// core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import Swiper, { Navigation, Pagination } from 'swiper';
-// import Swiper and modules styles
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 
 document.addEventListener('DOMContentLoaded', function () {
     let form = document.getElementById('contact-form');
@@ -79,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-new Swiper(".swiper", {
+new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",

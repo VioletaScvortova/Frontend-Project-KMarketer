@@ -2,7 +2,7 @@
   "name": "kmarketer",
   "version": "1.0.0",
   "description": "KMarketer - is the agency that provides marketing and business services worldwide",
-  "main": "kmarketer.js",
+  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
