@@ -2,7 +2,7 @@
   "name": "kmarketer",
   "version": "1.0.0",
   "description": "KMarketer - is the agency that provides marketing and business services worldwide",
-  "main": "kmarketer.js",
+  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
@@ -18,9 +18,17 @@
   ],
   "author": "violeta scvortova",
   "license": "ISC",
-  "devDependencies": {
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
+  "dependencies": {
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
     "@parcel/transformer-sass": "^2.10.3",
     "parcel": "^2.10.3",
-    "sass": "^1.69.5"
+    "swiper": "^11.0.5"
   }
 }
+   
+  
+

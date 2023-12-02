@@ -1,137 +1,4 @@
-/* montserrat-regular - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-italic - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/montserrat-v25-latin-italic.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-500 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/montserrat-v25-latin-500.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-500italic - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/montserrat-v25-latin-500italic.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-600 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/montserrat-v25-latin-600.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-600italic - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 600;
-  src: url("../fonts/montserrat-v25-latin-600italic.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-700 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/montserrat-v25-latin-700.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-700italic - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/montserrat-v25-latin-700italic.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-800 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/montserrat-v25-latin-800.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-800italic - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 800;
-  src: url("../fonts/montserrat-v25-latin-800italic.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-900 - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/montserrat-v25-latin-900.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* montserrat-900italic - latin */
-@font-face {
-  font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 900;
-  src: url("../fonts/montserrat-v25-latin-900italic.woff2") format("woff2");
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-
-  /* Top-banner styles start*/
-}
-
+/* Home-1. Intro styles start*/
 
 $font-family: "Montserrat",
 sans-serif;
@@ -164,6 +31,9 @@ body {
   color: $tertiary-color;
   text-align: center;
 }
+
+/* Home-1. Intro styles end*/
+/* Home-1. Header styles start*/
 
 .top-banner {
   font-family: $font-family;
@@ -258,9 +128,6 @@ body {
   }
 }
 
-/* Home-1. Header styles end*/
-/* Home-1. Intro styles start*/
-
 .container {
   max-width: 1050px;
   margin: 0 auto;
@@ -296,7 +163,6 @@ h6 {
   border: none;
 }
 
-/* Home-1. Intro styles end*/
 
 @mixin button-style {
   display: flex;
@@ -374,6 +240,7 @@ h6 {
   }
 }
 
+/* Home-1. Header styles end*/
 /* Home-2. Strong Points start*/
 
 @mixin section-styles {
@@ -541,8 +408,8 @@ h6 {
 }
 
 /* Home-4. What Clients Say end*/
-
 /* Home-5. Meet our team start*/
+
 .staff__content {
   max-width: 1050px;
   margin: 0 auto;
@@ -573,6 +440,7 @@ h6 {
 }
 
 #ceo {
+  @extend .staff__name;
   text-transform: uppercase;
 }
 
@@ -736,3 +604,19 @@ h6 {
 }
 
 /* Home-6. Contact Form end */
+
+
+/* Swiper start */
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

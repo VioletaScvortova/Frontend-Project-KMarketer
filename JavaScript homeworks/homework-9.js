@@ -21,9 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function handleSubmit(event) {
         event.preventDefault();
 
-
-
-
         let successColor = '#FFA62B';
         let errorColor = '#121831';
 
@@ -73,3 +70,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
