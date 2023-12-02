@@ -18,16 +18,17 @@
   ],
   "author": "violeta scvortova",
   "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.3",
-    "parcel": "^2.10.3",
-    "prettier": "^3.1.0",
-    "sass": "^1.69.5"
-  },
   "@parcel/resolver-default": {
     "packageExports": true
   },
   "dependencies": {
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3",
     "swiper": "^11.0.5"
   }
 }
+   
+  
+
