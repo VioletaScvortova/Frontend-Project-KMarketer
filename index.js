@@ -1,4 +1,6 @@
-import Swiper from 'swiper/bundle';
+
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -76,10 +78,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-new Swiper(".mySwiper", {
+new Swiper(".swiper", {
+    modules: [Navigation, Pagination],
+    slidesPerView: 3,
   pagination: {
     el: ".swiper-pagination",
-    type: "progressbar",
   },
   navigation: {
     nextEl: ".swiper-button-next",
