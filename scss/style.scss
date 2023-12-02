@@ -407,20 +407,6 @@ h6 {
   background: lightgray 50% / cover no-repeat;
 }
 
-.swiper {
-  width: 100%;
-  height: 400px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
 /* Home-4. What Clients Say end*/
 /* Home-5. Meet our team start*/
 
@@ -454,6 +440,7 @@ h6 {
 }
 
 #ceo {
+  @extend .staff__name;
   text-transform: uppercase;
 }
 
@@ -617,4 +604,19 @@ h6 {
 }
 
 /* Home-6. Contact Form end */
+
+
+/* Swiper start */
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
